@@ -1,4 +1,4 @@
-#N canvas 0 25 1308 789 12;
+#N canvas 521 -1091 1310 791 12;
 #X obj 243 373 hip~ 5;
 #X obj 17 17 inlet~ inL-\$1;
 #X obj 127 17 inlet~ inR-\$1;
@@ -170,12 +170,15 @@
 #X obj 812 57 r knob3-\$1;
 #X obj 890 324 i 68;
 #X obj 891 608 clone -s 1 201_sample-load 68 bank1-\$1;
-#X obj 924 276 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc #000000 #000000;
+#X obj 924 276 bng 15 250 50 0 empty empty empty 17 7 0 10 #fcfcfc
+#000000 #000000;
 #X msg 1070 559 vis 2 1;
 #X text 382 98 24 - 91;
+#X obj 260 50 print NOTES_IN;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;
 #X connect 3 0 20 0;
+#X connect 3 0 51 0;
 #X connect 11 0 27 0;
 #X connect 12 0 14 0;
 #X connect 12 1 13 0;
