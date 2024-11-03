@@ -1,4 +1,4 @@
-#N canvas 4 24 1206 850 12;
+#N canvas 487 -1051 1206 850 12;
 #X obj 88 11 inlet;
 #X obj 184 817 outlet~;
 #X obj 57 620 *~;
@@ -31,6 +31,8 @@
 #X obj 589 538 vline~;
 #X obj 589 562 *~;
 #X obj 589 503 pack 0 5;
+#X obj 290 400 print DUCK_LEFT;
+#X obj 300 360 print DUCKRIGHT;
 #X connect 0 0 28 0;
 #X connect 2 0 27 0;
 #X connect 3 0 4 0;
@@ -38,6 +40,7 @@
 #X connect 4 0 2 1;
 #X connect 5 0 14 0;
 #X connect 5 1 20 0;
+#X connect 5 1 33 0;
 #X connect 6 0 7 0;
 #X connect 6 0 9 1;
 #X connect 7 0 8 0;
@@ -49,6 +52,7 @@
 #X connect 13 0 12 0;
 #X connect 13 1 19 0;
 #X connect 14 0 23 0;
+#X connect 14 0 32 0;
 #X connect 14 1 15 0;
 #X connect 15 0 13 0;
 #X connect 16 0 27 0;

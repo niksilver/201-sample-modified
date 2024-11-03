@@ -1,4 +1,4 @@
-#N canvas 521 -1091 1310 791 12;
+#N canvas 314 -1064 1312 794 12;
 #X obj 243 373 hip~ 5;
 #X obj 17 17 inlet~ inL-\$1;
 #X obj 127 17 inlet~ inR-\$1;
@@ -19,7 +19,7 @@
 #X obj 683 345 f;
 #X obj 755 238 / 2;
 #X obj 244 208 poly 8 1, f 10;
-#N canvas 586 25 854 847 cycler 0;
+#N canvas 585 24 856 849 cycler 0;
 #X obj 48 -37 inlet;
 #X obj 87 944 outlet;
 #X obj 117 305 tabread \$0-cycler;
@@ -174,11 +174,12 @@
 #000000 #000000;
 #X msg 1070 559 vis 2 1;
 #X text 382 98 24 - 91;
-#X obj 260 50 print NOTES_IN;
+#X text 490 30 Decay;
+#X text 620 30 Pitch;
+#X text 810 30 Surprise;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;
 #X connect 3 0 20 0;
-#X connect 3 0 51 0;
 #X connect 11 0 27 0;
 #X connect 12 0 14 0;
 #X connect 12 1 13 0;
