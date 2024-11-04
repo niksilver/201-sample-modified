@@ -1,4 +1,4 @@
-#N canvas 314 -1064 1312 794 12;
+#N canvas 430 -1084 1312 794 12;
 #X obj 243 373 hip~ 5;
 #X obj 17 17 inlet~ inL-\$1;
 #X obj 127 17 inlet~ inR-\$1;
@@ -19,7 +19,7 @@
 #X obj 683 345 f;
 #X obj 755 238 / 2;
 #X obj 244 208 poly 8 1, f 10;
-#N canvas 585 24 856 849 cycler 0;
+#N canvas 504 0 856 874 cycler 0;
 #X obj 48 -37 inlet;
 #X obj 87 944 outlet;
 #X obj 117 305 tabread \$0-cycler;
@@ -74,6 +74,16 @@
 #X obj 48 49 % 68;
 #X obj 48 73 + 1;
 #X obj 48 21 + 44;
+#X text 110 90 note -> 1-68 (filenum);
+#X text 190 250 If some surprise...;
+#X text 230 280 ...read filenum^th entry;
+#X text 120 330 0 if no surprise \, else the entry;
+#X text 260 600 On 0;
+#X text 420 600 On 0.5;
+#X text 620 580 Other value;
+#X text 60 800 filenum;
+#X text 61 757 Open when not 0.5;
+#X text 250 770 Open when not 0;
 #X connect 0 0 25 0;
 #X connect 2 0 3 0;
 #X connect 3 0 10 0;
@@ -176,7 +186,9 @@
 #X text 382 98 24 - 91;
 #X text 490 30 Decay;
 #X text 620 30 Pitch;
-#X text 810 30 Surprise;
+#X text 260 120 Note \, vol \, weighting 0-1;
+#X text 810 30 Surprise - how much it swings between two samples each
+time;
 #X connect 0 0 7 0;
 #X connect 0 0 8 0;
 #X connect 3 0 20 0;
